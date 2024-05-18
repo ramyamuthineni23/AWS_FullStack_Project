@@ -38,7 +38,7 @@ Before you begin, ensure you have the following installed:
 - Secure handling and storage of files without making them public.
 
 ### Technologies Used
-- Frontend: ReactJS, TailwindCSS, Flowbite
+- Frontend: ReactJS
 - Backend: AWS Lambda, S3, DynamoDB, EC2, API Gateway, IAM
 - DevOps: AWS CDK, AWS SDK for JavaScript (V3)
 - Programming Languages: TypeScript, JavaScript
