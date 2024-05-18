@@ -27,7 +27,7 @@ Before you begin, ensure you have the following installed:
 
 ### System Components
 
-- Frontend: A responsive web UI built with ReactJS and TailwindCSS, including Flowbite.
+- Frontend: A responsive web UI built with ReactJS.
 - Backend: AWS services including Lambda, S3, DynamoDB, EC2, and API Gateway.
 - Infrastructure Management: AWS CDK is used to define and deploy all infrastructure.
 
