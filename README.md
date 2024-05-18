@@ -1,6 +1,6 @@
-# File Processing Application
+# AWS Serverless File Processor
 
-This repository contains the code for a full-stack file processing application. The front-end is built with React and communicates with a back-end AWS infrastructure defined with AWS Cloud Development Kit (CDK). The back-end setup includes AWS Lambda functions, an S3 bucket, a DynamoDB table, and API Gateway.
+This project demonstrates a serverless architecture using AWS to automatically process text files uploaded by users. The frontend allows users to upload a text file and input text, which is then processed by backend services running on AWS. The processed file is appended with the input text and saved back to S3, with metadata managed through DynamoDB.
 
 ## Prerequisites
 
@@ -11,6 +11,60 @@ Before you begin, ensure you have the following installed:
 - [AWS CLI](https://aws.amazon.com/cli/) (version 2.x)
 - [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html) (version 2.x)
 - An AWS account and AWS credentials configured locally
+
+## Table of Contents
+- Project Overview
+- Technologies Used
+- Project Structure
+- Setup Instructions
+- Backend Setup
+- Frontend Setup
+- Usage Guide
+- Architecture Diagram
+- References
+- Demo
+
+## Project Overview
+
+### System Components
+
+- Frontend: A responsive web UI built with ReactJS and TailwindCSS, including Flowbite.
+- Backend: AWS services including Lambda, S3, DynamoDB, EC2, and API Gateway.
+- Infrastructure Management: AWS CDK is used to define and deploy all infrastructure.
+
+### Features
+- Direct upload of files to S3 from the browser.
+- Storage of file metadata and paths in DynamoDB via Lambda and API Gateway.
+- Automatic EC2 instance creation to process files by appending text.
+- Secure handling and storage of files without making them public.
+
+### Technologies Used
+- Frontend: ReactJS, TailwindCSS, Flowbite
+- Backend: AWS Lambda, S3, DynamoDB, EC2, API Gateway, IAM
+- DevOps: AWS CDK, AWS SDK for JavaScript (V3)
+- Programming Languages: TypeScript, JavaScript
+- Others: Node.js, Git
+
+### Project Structure
+
+project-root/
+│
+├── backend/ - Contains AWS CDK and Lambda function code
+│   ├── cdk/
+│   │   ├── bin/
+│   │   ├── lib/
+│   │   └── package.json
+│   ├── lambda/
+│   │   └── handler.js
+│   └── scripts/
+│       └── process-file.sh - Script run by EC2 instance
+│
+└── frontend/ - React application for user interface
+    ├── public/
+    ├── src/
+    │   ├── components/
+    │   └── App.js
+    └── package.json
 
 ## Setup Instructions
 
@@ -94,5 +148,14 @@ To test the application:
 - **CDK Bootstrap**: If you haven't used CDK in your AWS account/region before, you might need to run `cdk bootstrap aws://ACCOUNT_ID/REGION` before deploying.
 - **Environment Variables**: Make sure your `.env` file in the React app is correctly pointing to the deployed API Gateway endpoints.
 
+## Architecture Diagram
+Include a diagram to illustrate the architecture:
 
-This `README.md` template gives a comprehensive guide that anyone can follow to set up and test your application. Adjust paths and instructions according to your actual project setup and repository structure. Make sure to replace `<your-repository-url>` and other placeholders with the actual values relevant to your project.
+
+## References
+AWS Official Documentation: https://docs.aws.amazon.com
+ReactJS Docs: https://reactjs.org/docs/getting-started.html
+CDK Guide: https://docs.aws.amazon.com/cdk/latest/guide
+TailwindCSS Docs: https://tailwindcss.com/docs
+
+## Demo
