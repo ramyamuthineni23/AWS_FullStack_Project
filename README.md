@@ -132,7 +132,7 @@ Include a diagram to illustrate the architecture:
 
 ## References
 - AWS Official Documentation: https://docs.aws.amazon.com
-- ReactJS Docs: https://reactjs.org/docs/getting-started.html
+- ReactJS Docs: [https://reactjs.org/docs/getting-started.html](https://react.dev/)
 - CDK Guide: https://docs.aws.amazon.com/cdk/latest/guide
 - SDK Guide: https://docs.aws.amazon.com/sdkref/latest/guide/overview.html
 ## Demo
