@@ -15,7 +15,6 @@ Before you begin, ensure you have the following installed:
 ## Table of Contents
 - Project Overview
 - Technologies Used
-- Project Structure
 - Setup Instructions
 - Backend Setup
 - Frontend Setup
@@ -45,27 +44,6 @@ Before you begin, ensure you have the following installed:
 - Programming Languages: TypeScript, JavaScript
 - Others: Node.js, Git
 
-### Project Structure
-
-project-root/
-│
-├── backend/ - Contains AWS CDK and Lambda function code
-│   ├── cdk/
-│   │   ├── bin/
-│   │   ├── lib/
-│   │   └── package.json
-│   ├── lambda/
-│   │   └── handler.js
-│   └── scripts/
-│       └── process-file.sh - Script run by EC2 instance
-│
-└── frontend/ - React application for user interface
-    ├── public/
-    ├── src/
-    │   ├── components/
-    │   └── App.js
-    └── package.json
-
 ## Setup Instructions
 
 Follow these steps to set up the project:
@@ -86,11 +64,11 @@ cd your-repository-name
    npm install
 
 3. **Configure Environment Variables**
-
    Create a `.env` file in the root of the `my-file-processing-app` directory. Replace the placeholders with the appropriate API endpoints that you will get after deploying your CDK stack.
 
-   REACT_APP_PRESIGNED_URL_API=<Your API Gateway endpoint for presigned URL>
-   REACT_APP_METADATA_API=<Your API Gateway endpoint for inserting metadata in DynamoDB>
+   REACT_APP_PRESIGNED_URL_API=\<Your API Gateway endpoint for presigned URL>
+   
+   REACT_APP_METADATA_API=\<Your API Gateway endpoint for inserting metadata in DynamoDB>
 
 ### 3. Back-End Setup (`my-file-processing-cdk`)
 
@@ -153,9 +131,8 @@ Include a diagram to illustrate the architecture:
 
 
 ## References
-AWS Official Documentation: https://docs.aws.amazon.com
-ReactJS Docs: https://reactjs.org/docs/getting-started.html
-CDK Guide: https://docs.aws.amazon.com/cdk/latest/guide
-TailwindCSS Docs: https://tailwindcss.com/docs
-
+- AWS Official Documentation: https://docs.aws.amazon.com
+- ReactJS Docs: https://reactjs.org/docs/getting-started.html
+- CDK Guide: https://docs.aws.amazon.com/cdk/latest/guide
+- SDK Guide: https://docs.aws.amazon.com/sdkref/latest/guide/overview.html
 ## Demo
