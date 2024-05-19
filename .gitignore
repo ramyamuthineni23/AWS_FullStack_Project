@@ -6,3 +6,4 @@ coverage/
 **/*.d.ts
 **/.npmignore
 **/.Rhistory
+**/.js
