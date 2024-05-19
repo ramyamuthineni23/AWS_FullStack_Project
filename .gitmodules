@@ -1,0 +1,3 @@
+[submodule "my-file-processing-app"]
+	path = my-file-processing-app
+	url = https://github.com/ramyamuthineni23/AWS_FullStack_Project
