@@ -1,8 +1,8 @@
-node_modules/
+**/node_modules/
 .env
-.DS_Store
-build/
+**/.DS_Store
+**/build/
 coverage/
-*.d.ts
-.npmignore
-.Rhistory
+**/*.d.ts
+**/.npmignore
+**/.Rhistory
