@@ -6,4 +6,8 @@ coverage/
 **/*.d.ts
 **/.npmignore
 **/.Rhistory
-**/.js
+**.js
+**/cdk.json
+**/cdk.out
+**/.eslintignore
+**/public/

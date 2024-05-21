@@ -10,7 +10,7 @@ const FileUploadComponent: React.FC = () => {
   const [inputText, setInputText] = useState<string>('');
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
-  const apiBaseUrl = 'https://cboskmv49j.execute-api.us-west-1.amazonaws.com/prod';
+  const apiBaseUrl = process.env.REACT_APP_API_BASED_URL_ENDPOINT;
   console.log("Api base url:", apiBaseUrl);
   console.log("Process log", process.env);
 
@@ -72,10 +72,12 @@ const FileUploadComponent: React.FC = () => {
         console.log('File uploaded successfully!');
         alert('File uploaded successfully!');
 
-        const bucketName = 'myfileprocessingcdkstack-fileuploadbucketdf219b4d-thodfothrmrp';
-        const region = 'us-west-1'; // Replace with your bucket's region
+        const bucketName = process.env.REACT_APP_BUCKETNAME;
+        const region = process.env.REACT_APP_AWS_REGION;
         const filename = selectedFile.name;
         
+        console.log("Bucket Name:", bucketName);
+        console.log("region:", region);
         console.log("File Name:", filename);
 
         const key = `uploads/${filename}`; 

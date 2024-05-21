@@ -220,7 +220,6 @@ export class MyFileProcessingCdkStack extends cdk.Stack {
     new cdk.CfnOutput(this, 'BucketName', { value: fileUploadBucket.bucketName });
     new cdk.CfnOutput(this, 'TableName', { value: fileTable.tableName });
     new cdk.CfnOutput(this, 'ApiUrl', { value: api.url });
-    new cdk.CfnOutput(this, 'PresignedURLFunctionName', { value: presignedUrlFunction.functionName });
     new cdk.CfnOutput(this, 'InitialLambdaFunctionName', { value: initialProcessFunction.functionName });
     new cdk.CfnOutput(this, 'Ec2TriggerLambdaFunctionName', { value: ec2TriggerFunction.functionName });
   }

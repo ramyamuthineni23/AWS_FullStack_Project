@@ -61,6 +61,7 @@ exports.handler = async (event, context) => {
                 console.log('Launched EC2 instance',result);
             } catch (err) {
                 console.error("Error launching EC2 instance: ", err);
+                throw err('Error launching EC2 instance');
             }
         }
     }

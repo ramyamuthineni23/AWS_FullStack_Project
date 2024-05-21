@@ -117,7 +117,7 @@ To test the application:
 
 ## Additional Information
 
-- **Lambda Functions**: The Lambda code is located under `my-file-processing-cdk/resources/lambdas`.
+- **Lambda Functions**: The Lambda code is located under `my-file-processing-cdk/resources/`.
 - **Front-End Code**: The main application code is in `my-file-processing-app/src`.
 
 ## Troubleshooting
@@ -126,14 +126,11 @@ To test the application:
 - **CDK Bootstrap**: If you haven't used CDK in your AWS account/region before, you might need to run `cdk bootstrap aws://ACCOUNT_ID/REGION` before deploying.
 - **Environment Variables**: Make sure your `.env` file in the React app is correctly pointing to the deployed API Gateway endpoints.
 
-## Architecture Diagram
-Include a diagram to illustrate the architecture:
-
-
 ## References
 - AWS Official Documentation: https://docs.aws.amazon.com
 - ReactJS Docs: https://reactjs.org/docs/getting-started.html
 - CDK Guide: https://docs.aws.amazon.com/cdk/latest/guide
 - SDK Guide: https://docs.aws.amazon.com/sdkref/latest/guide/overview.html
+
 ## Demo
 https://drive.google.com/drive/folders/1V6pY6OG8EMwdY7KE68YGA1eHV5paLNRP?usp=drive_link
